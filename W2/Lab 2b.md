@@ -46,3 +46,20 @@ type("False")
 print(-10+2*2//7+6.5**2/6)
 -2.958333333333333
 ```
+
+# Work without Python
+## 1. Literals
+### 125 // 13 + 100 / 2 % 13 // 2
+###    9  + 100 / 2 % 13 // 2
+###    9 + 50 % 13 // 2 
+###    9 + 11 // 2
+###	  9 + 5 = 14
+## 3. Operator Precedence
+### -10 + 2 * 2 // 7 + 6.5 ** 2 / 6
+### -10 + 2 * 2 // 7 + 42.25 / 6
+### -10 + 4 //7 + 42.25 / 6
+### -10 + 0  + 42.25 / 6
+### -10 + 7.04 = -2.9583
+
+## Challenges 
+I made the same mistake for 2 % -4 and 2 % 4, I had to do some research on why I got this wrong and it's because I didn’t apply “floor” so for 2%4=-0.5 , applying floor would be -1 and 2%4=1. 
