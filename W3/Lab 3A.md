@@ -1,4 +1,5 @@
 #Lab 3A
+1. Comparison Operators
 ```python
 ord("`")
 96
@@ -39,4 +40,28 @@ ord("9")
 ord("(")
 40
 ```
++ the rest of the keys in which they all have a unique identifier.
 
+5. Problem Solving: Larger Number
+```python
+number1=int(input("enter the first number:"))
+enter the first number:3
+number2=int(input("enter the second number:"))
+enter the second number:5
+number3=int(input("enter the third number:"))
+enter the third number:2
+if number1>number2 and number1>number3:
+    larger_number=number1
+elif number2>number1 and number2>number3:
+    larger_number=number2
+else:
+    larger_number=number3
+
+    
+print("The larger number is:", larger_number)
+The larger number is: 5
+```
+5. Problem Solving: Methods
+
+
+  
