@@ -61,7 +61,7 @@ else:
 print("The larger number is:", larger_number)
 The larger number is: 5
 ```
-5. Problem Solving: Methods
+5. Problem Solving Method 1: 
 ```python
 value=int(input("enter a value:"))
 enter a value:5
@@ -72,6 +72,34 @@ else:
     print("value is odd")
 value is odd
 ```
+5. method 2:
+```python
+value=int(input("enter a value:"))
+enter a value:5
+if value & 1==1:
+    print("value is odd")
+else:
+    print("value is even") 
+value is odd
+#bit number for 5 is 101, because it ends in 1, number is odd.
+```
+5C. grading scheme
+```python
+grade=int(input("input grade:"))
+input grade:95
+if grade >= 90:
+    print("Grade: A", "Description: Work of genuinely superior quality.")
+elif (grade >= 80) and (grade<=89):
+    print("Grade: B", "Description: Passing performance falls approximately in the upper distribution of passing grades.")
+elif (grade >= 71) and (grade<=79):
+    print("Grade: C", "Description: Passing performance falls approximately in the center of the distribution of all passing grades.")
+elif (grade >=65) and (grade <=70):
+    print("Grade: D", "Description: Passing performance falls approximately in the lower distribution of passing grades.")
+else:
+    print("grade: F", "Failing performance that does not satisfy the basic requirements of the course and needs to be improved in significant ways.")   
+Grade: A Description: Work of genuinely superior quality.
+```
+
 
 
   
