@@ -62,6 +62,16 @@ print("The larger number is:", larger_number)
 The larger number is: 5
 ```
 5. Problem Solving: Methods
+```python
+value=int(input("enter a value:"))
+enter a value:5
+#approach1
+if value%2==0:
+    print("value is even")
+else:
+    print("value is odd")
+value is odd
+```
 
 
   
