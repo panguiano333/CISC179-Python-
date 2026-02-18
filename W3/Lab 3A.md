@@ -102,6 +102,48 @@ Grade: A Description: Work of genuinely superior quality.
 5D. Truth Table
 ```python
 
+5E.
+```python
+value=int(input("enter a value:"))
+enter a value:10
+if value & 1==1:
+    print("value is odd")
+else:
+    print("value is even") 
+value is even
+#bit number for 10 is 1010, because it ends in 1, number is odd, and even if it ends in 0. 
+```
+6. Code Revision
+```python
+name = input("What's your name? ")
+What's your name? paola
+time = int(input("What time is it? "))
+What time is it? 1500
+if (time < 1200):
+    print("Hi "+name + ", good morning!")
+elif (time < 1800):
+    print("Hi "+name + ", good afternoon!")
+elif (time > 1800):
+    print("Hi "+name + ", good evening!")
+else:
+    print("Good Bye")   
+Hi paola, good afternoon!
+```
+7. Output Verification
+```python
+x = 1
+y = 1.0
+z = "1"
 
+if x == y:
+    print("one")
+if y == int(z): 
+    print("two")
+elif x == y: #repeated statement
+    print("three")
+else:
+    print("four")
+#output would be one because the first statement is true, meaning python will not continue with the rest of the conditions despite the fact that the next 2 statements are also true.
+```
 
   
