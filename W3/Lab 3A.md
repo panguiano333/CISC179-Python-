@@ -99,6 +99,8 @@ else:
     print("grade: F", "Failing performance that does not satisfy the basic requirements of the course and needs to be improved in significant ways.")   
 Grade: A Description: Work of genuinely superior quality.
 ```
+5D. Truth Table
+```python
 
 
 
