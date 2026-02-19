@@ -101,6 +101,8 @@ Grade: A Description: Work of genuinely superior quality.
 ```
 5D. Truth Table
 ```python
+#possible combination of boolean values 
+```
 
 5E.
 ```python
