@@ -1,4 +1,5 @@
-# Lab 3B (fyi: the comments are notes for myself)
+# Lab 3B 
+(fyi: the comments are notes for myself)
 1A. While Loop
 ```python
 n0=16
@@ -39,3 +40,5 @@ else:
 2
 1
 ```
+1C.
+```python
