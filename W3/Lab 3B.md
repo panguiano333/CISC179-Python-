@@ -42,3 +42,53 @@ else:
 ```
 1C.
 ```python
+value1=int(input("enter value1:"))
+enter value1:3
+value2=int(input("enter value2:"))
+enter value2:8
+print("arithmetic operation options:")
+arithmetic operation options:
+print("+")
++
+print("-")
+-
+print("*")
+*
+print("/")
+/
+answer=""
+while answer.lower()!="no": #must add for case sensitivity
+    print("run arithmetic operation yes or no?:") 
+    answer=input("type yes or no:").lower()
+    if answer=="yes":
+        choose_option=input("select arithmetic operation:")
+        if choose_option=="+":
+            result=value1+value2
+            print(result)
+        elif choose_option=="-":
+            result=value1-value2
+            print(result)
+        elif choose_option=="*":
+            result=value1*value2
+            print(result)
+        elif choose_option=="/":
+            if value2 !=0:
+                result=value1/value2
+                print(result)
+            else:
+                print("re-input value2 for a non-zero value")
+    elif answer=="no":
+        print("no further calculations")
+        break
+    else:
+        print("redo arithmetic operation? yes or no")
+
+        
+run arithmetic operation yes or no?:
+type yes or no:yes
+select arithmetic operation:-
+-5
+run arithmetic operation yes or no?:
+type yes or no:no
+no further calculations
+```
