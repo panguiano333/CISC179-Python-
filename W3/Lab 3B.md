@@ -78,7 +78,7 @@ while answer.lower()!="no": #must add for case sensitivity
             else:
                 print("re-input value2 for a non-zero value")
     elif answer=="no":
-        print("no further calculations")
+        print("have a good day")
         break
     else:
         print("redo arithmetic operation? yes or no")
@@ -90,5 +90,5 @@ select arithmetic operation:-
 -5
 run arithmetic operation yes or no?:
 type yes or no:no
-no further calculations
+have a good day
 ```
