@@ -92,3 +92,15 @@ run arithmetic operation yes or no?:
 type yes or no:no
 have a good day
 ```
+2. For Loops
+```python
+phrase="to be or not to be"
+total_letters=0
+for char in phrase:
+    if char >="a" and char <="z":
+        total_letters=total_letters+1
+
+        
+print(total_letters)
+13
+```
