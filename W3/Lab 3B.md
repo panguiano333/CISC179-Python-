@@ -96,11 +96,20 @@ have a good day
 ```python
 phrase="to be or not to be"
 total_letters=0
+letter_count={}
 for char in phrase:
     if char >="a" and char <="z":
         total_letters=total_letters+1
+        if char in letter_count:
+            letter_count[char] +=1
+        else:
+            letter_count[char]=1
 
-        
-print(total_letters)
-13
+            
+print("total character count:", total_letters)
+total character count: 13
+print("total number of distinct letters:", letter_count)
+total number of distinct letters: {'t': 3, 'o': 4, 'b': 2, 'e': 2, 'r': 1, 'n': 1}
 ```
+Challenges
+1. I did struggle to code how to count how many times each letters appear without having to list the individual letters ex: if char=='o' , char=='m', etc. I did have to do research and search up examples on how to code to get the full alphabet without listing each individual letter, is there another way to obtain this result? 
