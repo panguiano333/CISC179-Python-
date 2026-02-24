@@ -1,4 +1,5 @@
 # Lab 4a Tuples
+## 1. Exercising Tuples
 1a.
 ```python
 value1=int(input("enter value1:"))
