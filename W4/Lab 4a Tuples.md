@@ -47,3 +47,10 @@ print(hex(id(my_tuple)))
 ```
 Part c and part d of my_tuple are different because tuples are immutable, meaning the concatenation of my_tuple in part d will generate a new tuple because the orignal cannot be modified thus creating a new memeory address. 
 
+1e. 
+```python
+x = (1,2,3,4)
+x.append(1)
+x[1] = "hello"
+del x[2]
+```
