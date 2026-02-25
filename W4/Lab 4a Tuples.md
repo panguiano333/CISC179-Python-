@@ -86,6 +86,32 @@ print(c)
 ```
 ## Memory Management 
 ```python
+my_x = [100,200,300,400]
+my_y = (200,300,400,500)
+print(hex(id(my_x[0])))
+0x10a281028
+print(hex(id(my_x[1])))
+0x10a281ca8
+print(hex(id(my_x[2])))
+0x108f05af0
+print(hex(id(my_x[3])))
+0x108f07830
+print(hex(id(my_y[0])))
+0x10a281ca8
+print(hex(id(my_y[1])))
+0x108f079b0
+print(hex(id(my_y[2])))
+0x108f07af0
+print(hex(id(my_y[3])))
+0x108f077d0
+```
 
+| Index | my_x           | my_y 
+| ----- | ----           | ---- 
+| 0     | 0x10a281028    | 0x10a281ca8    
+| 1     | 0x10a281ca8    | 0x108f079b0    
+| 2     | 0x108f05af0    | 0x108f07af0    
+| 3     | 0x108f07830    | 0x108f077d0   
+200 and 300 share the same address in the tuple and list. This is because although tuples are immutable, the tuples being immutable only refers to its strucutre meaning python will still reuse and store memory address of the same object. I was confused as to why 300 and 400 did not share the same address, but I researched that its due to python having a small integer cache (-5 to 256). This range was generated because the numbers within this range are used often in which python will generate the same address but for numbers bigger or smaller, it will allocate a new memory address. 
 
 
