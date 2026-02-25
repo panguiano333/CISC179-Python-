@@ -51,7 +51,41 @@ Part c and part d of my_tuple are different because tuples are immutable, meanin
 1e. 
 ```python
 x = (1,2,3,4)
-x.append(1)
-x[1] = "hello"
-del x[2]
+x.append(1) #adds a 1 at the end of the tuple, in addition they do not have .append operation 
+x[1] = "hello" #changes the element at index 1 from 2 to "hello"
+del x[2] #deletes the element at index 2
+#All of these are not acceptable because a tuple is immutable data meaning you cannot add, remove, extend, delete or any other modification. 
 ```
+## 2. Packing and Unpacking Tuples 
+2a.
+```python
+(one, two, three, four)=(1,2,3,4)
+print(type(one))
+<class 'int'>
+print(type(two))
+<class 'int'>
+print(type(three))
+<class 'int'>
+print(type(four))
+<class 'int'>
+```
+2c.
+```python
+x=(1,2,3,4)
+a,*b,c=x
+print(x) #prints the original tuple 
+(1, 2, 3, 4)
+#unpacking the tuple:
+print(a)
+1
+print(*b)
+2 3
+print(c)
+4
+# *b includes all the numbers in between the first which is assign to A, and the last which is assigned to c. 
+```
+## Memory Management 
+```python
+
+
+
