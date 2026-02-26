@@ -103,6 +103,26 @@ print(d_copy)
 {123: 'Coconut', '123': 'kiwi'}
 ```
 2b.
-
+```python
+#in the example, d_copy = d_orig, any change you make to one list the other one will mirror as both variables are the same dictionary in memory. To solve this, you must use shallow copy or deep copy, such as: 
+import copy
+d_orig = {123:"Coconut"}
+d_copy=copy.deepcopy(d_orig)
+d_copy['321']='kiwi'
+print(d_orig)
+{123: 'Coconut'}
+print(d_copy)
+{123: 'Coconut', '321': 'kiwi'}
+```
+2c.
+```python
+#it would give you an error message when using a list because they are mutable, and the application of hashing is suitable for exact-match inquiries.
+my_list=["hello","hi","computer"]
+hash(my_list)
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    hash(my_list)
+TypeError: unhashable type: 'list'
+```
 
 
