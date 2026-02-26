@@ -76,6 +76,17 @@ print(my_dict)
 ```
 1e.
 ```python
+text='The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia. It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes. It is traditionally classified into nine recent subspecies, though some recognise only two subspecies, mainland Asian tigers and the island tigers of the Sunda Islands.'
+words=text.split()
+word_count={}
+for word in words:
+    if word in word_count:
+        word_count[word]+=1
+    else:
+        word_count[word]=1
+    
+print(word_count)
+{'The': 1, 'tiger': 1, '(Panthera': 1, 'tigris)': 1, 'is': 2, 'a': 5, 'large': 2, 'cat': 1, 'and': 4, 'member': 1, 'of': 2, 'the': 3, 'genus': 1, 'Panthera': 1, 'native': 1, 'to': 1, 'Asia.': 1, 'It': 2, 'has': 1, 'powerful,': 1, 'muscular': 1, 'body': 1, 'with': 2, 'head': 1, 'paws,': 1, 'long': 1, 'tail': 1, 'orange': 1, 'fur': 1, 'black,': 1, 'mostly': 1, 'vertical': 1, 'stripes.': 1, 'traditionally': 1, 'classified': 1, 'into': 1, 'nine': 1, 'recent': 1, 'subspecies,': 2, 'though': 1, 'some': 1, 'recognise': 1, 'only': 1, 'two': 1, 'mainland': 1, 'Asian': 1, 'tigers': 2, 'island': 1, 'Sunda': 1, 'Islands.': 1}
 ```
 ## TroubleShooting
 2a. 
