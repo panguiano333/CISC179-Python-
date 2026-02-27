@@ -49,9 +49,6 @@ print(my_user_dict)
 You don't need any keys to create a dictionary as shown in my code, I started with an empty dictionary and filled out with user input. 
 1c.
 ```python
-```
-1d.
-```python
 list_into_dict=[
     ('Name', 'Sarah Connor'),
     ('Date of birth', '1 Jan 1980'),
@@ -67,12 +64,29 @@ for items in list_into_dict:
         new_key=input('enter new key:')
         key=new_key
     my_dict[key]=value
-
-    
+ 
 repeated key: Name
 enter new key: name2
 print(my_dict)
 {'Name': 'Sarah Connor', 'Date of birth': '1 Jan 1980', 'Address': '1000 Black Mountain Drive', ' name2': 'Jim Hawkins'}
+```
+1d.
+```python
+list_into_dict=[
+    ('Name', 'Sarah Connor'),
+    ('Date of birth', '1 Jan 1980'),
+    ('Address', '1000 Black Mountain Drive', 92126),
+    ('Name', 'Jim Hawkins')
+]
+my_dict={}
+for items in list_into_dict:
+    key=items[0] 
+    value=items[1] 
+    my_dict[key]=value
+
+print(my_dict)
+{'Name': 'Jim Hawkins', 'Date of birth': '1 Jan 1980', 'Address': '1000 Black Mountain Drive'}
+#turned list into a dictionary, but no validation for unique key, so the value of the repeated key "name", will replace the value of the first key. 
 ```
 1e.
 ```python
