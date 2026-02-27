@@ -37,5 +37,56 @@ kpl value in mpg is 204.63705
 run unit conversion?(y/n):n
 Have a good day
 ```
+1b.
+```python
+def reverse(*args):
+#used stackoverflow, searched "function unnamed argument" in which I found *args variable.
+    for arg in args[::-1]:
+        print(arg)
 
+        
+reverse(1,2,3,4)
+4
+3
+2
+1
+```
+1c.
+```python
+#operations that modify a list or dictionary would be visible outside of the functions such as .append, remove(), etc for list and .pop, update(), etc for dictionaries because the modification are being done to same obeject in memory.
+def modify(patient_info):
+    patient_info['age']='25'
+patient={
+    'name':'paola',
+    'occupation':'researcher'
+    }
+modify(patient)
+print(patient)
+{'name': 'paola', 'occupation': 'researcher', 'age': '25'}
+#to minimize the risk of changing the original list or dictionary, making a deepcopy preserves original list and generates a new list as you are no longer making the modification to the same object in memory but rather a different one due to the deep copy. 
+```
+1e.
+```python
+x=5
+def funct_1():
+    x=3
+funct_1()
+print(x)
+5
+# x=5 is a global variable. x=3 is a local variable in which it does not affect the global variable meaning x remains as 5. 
+x=5
+def funct_2():
+    global x
+    x=2
+funct_2()   
+print(x)
+2
+# global x allows for the modification of the global variable rather than generating a local variable inside of the function, thus, after calling the function, the global variable x is updated to 2. 
+```
+## Troubleshooting
+2a. 
+```python
+def my_func(a,b,**c):
+  print(c)
 
+my_func(1,2,3,4,5,6)
