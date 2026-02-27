@@ -95,4 +95,14 @@ my_func(1,2,3,4,5,6)
 ```
 2b.
 ```python
+def my_func_global():
+    global x
+    x=100
 
+    
+x=10
+my_func_global()
+print(x)
+100
+#to modify, you must have the global x variable inside of the function and applied before the declaring x. In the original code, it was placed outside of the function so it did not apply any changes, and x=100 was coded as a local variable. 
+```
