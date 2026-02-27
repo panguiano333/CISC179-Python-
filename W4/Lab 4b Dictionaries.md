@@ -45,8 +45,8 @@ enter occupation:PhD Student
 do you want to continue (y/n):n
 print(my_user_dict)
 {1: {'name': 'Paola', 'age': '25', 'occupation': 'Researcher'}, 2: {'name': 'Amaya', 'age': '24', 'occupation': 'PhD Student'}}
+#You don't need any keys to create a dictionary as shown in my code, I started with an empty dictionary and filled out with user input.
 ```
-You don't need any keys to create a dictionary as shown in my code, I started with an empty dictionary and filled out with user input. 
 1c.
 ```python
 list_into_dict=[
