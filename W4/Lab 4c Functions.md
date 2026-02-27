@@ -65,7 +65,7 @@ print(patient)
 {'name': 'paola', 'occupation': 'researcher', 'age': '25'}
 #to minimize the risk of changing the original list or dictionary, making a deepcopy preserves original list and generates a new list as you are no longer making the modification to the same object in memory but rather a different one due to the deep copy. 
 ```
-1e.
+1d.
 ```python
 x=5
 def funct_1():
