@@ -86,7 +86,13 @@ print(x)
 ## Troubleshooting
 2a. 
 ```python
-def my_func(a,b,**c):
-  print(c)
-
+def my_func(a,b,*c): #**c = keyword collecter *c=positional collector
+    print(a,b,c)
+  
 my_func(1,2,3,4,5,6)
+1 2 (3, 4, 5, 6)
+# I fixed the error by assigning the rest of the values to c, meaning, 3,4,5,6 will now have a positonal arguments as a tuple and you will no longer obtain the error. 
+```
+2b.
+```python
+
