@@ -75,15 +75,15 @@ Vacc. Name: HepA , Administration(mos): 12
 
 insert(new_patient)
 ID: R003 Paola Quiroz
-Vacc. Name: HepB ,Administration(mos): {0, 2, 6}
-Vacc. Name: RV ,Administration(mos): {2, 4, 6}
-Vacc. Name: DTap ,Administration(mos): {2, 4, 6, 15}
-Vacc. Name: Hib ,Administration(mos): {9, 2, 4, 12}
-Vacc. Name: PCV13 ,Administration(mos): {2, 4, 12, 6}
-Vacc. Name: IPV ,Administration(mos): {2, 3, 6}
-Vacc. Name: MMR ,Administration(mos): 12
-Vacc. Name: VAR ,Administration(mos): 12
-Vacc. Name: HepA ,Administration(mos): 12
+Vacc. Name: HepB , Administration(mos): {0, 2, 6}
+Vacc. Name: RV , Administration(mos): {2, 4, 6}
+Vacc. Name: DTap , Administration(mos): {2, 4, 6, 15}
+Vacc. Name: Hib , Administration(mos): {9, 2, 4, 12}
+Vacc. Name: PCV13 , Administration(mos): {2, 4, 12, 6}
+Vacc. Name: IPV , Administration(mos): {2, 3, 6}
+Vacc. Name: MMR , Administration(mos): 12
+Vacc. Name: VAR , Administration(mos): 12
+Vacc. Name: HepA , Administration(mos): 12
 
 patient_dict.keys()
 dict_keys(['R001', 'R002', 'R003'])
