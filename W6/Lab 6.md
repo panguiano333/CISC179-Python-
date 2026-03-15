@@ -32,4 +32,8 @@ phones=re.findall(r'\d[\d\-]+\d',info)
 # r' for raw string, \d for decimal digit [0-9], in this example, it will take the first number 1. Then im using the [ ], to extract all hyphens and all the digits in the middle. In this exampke it will be -888-111-2222 Lastly, I add another \d to ensure that it ends in a number, meaning extrating the last numbers and ensuring it doesnt stop at the hypen. In this example it is extracting the last 2, althought this step in not necessary. 
 print(phones)
 ['1-888-111-2222']
+```
+## Email Username Processing
+```python
+info='The story is written by Roger Federer & Serina Williams You can connect with the author at [rfederer@tennis.com] and [swilliams@tennis.com]Admin contact number: 1-888-111-2222'
 
