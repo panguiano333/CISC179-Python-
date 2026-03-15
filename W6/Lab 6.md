@@ -28,3 +28,8 @@ emails=re.findall(r'\w+@\w+\.\w+', info) #here, I use findall() because it will 
 #the pattern within the findall() is r'\w+@\w+' which means: r is suggested to use at the begging of pattern which refers to raw string. Then we have /w, which will 'match a letter or digit or underbar a-zA-Z0-9'. The + sign is just used for one or more occurences in the email, and the @ is to find the symbol of @ . To include the .com of each email, then I added .\w+' which will include the literal '.' plus information past the '.', a letter or digit or underbar a-zA-Z0-9' for one or more occurences
 print(emails)
 ['rfederer@tennis.com', 'swilliams@tennis.com']
+phones=re.findall(r'\d[\d\-]+\d',info)
+# r' for raw string, \d for decimal digit [0-9], in this example, it will take the first number 1. Then im using the [ ], to extract all hyphens and all the digits in the middle. In this exampke it will be -888-111-2222 Lastly, I add another \d to ensure that it ends in a number, meaning extrating the last numbers and ensuring it doesnt stop at the hypen. In this example it is extracting the last 2, althought this step in not necessary. 
+print(phones)
+['1-888-111-2222']
+
