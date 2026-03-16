@@ -4,14 +4,14 @@ story='Once on a time and twice on a time, and all times together as ever I hear
 modified_story=story.replace('(',' ').replace(')',' ').replace('.',' ').replace(',',' ').replace('-',' ').replace('—',' ').replace(';',' ').replace('?',' ').replace('!',' ').replace('"',' ').replace('“',' ').replace('”',' ') #First,I modify the text in order to accurately figure out the word frequency. If I would had not replaced the characters with ' ', By removing the extra charcaters, python will no longer consider "word," and "word" as distinct words.  
 print(modified_story)
 squeezed text (78 lines)
-char_count=len(modified_story) #using the function len() will help determine the count of charcaters in a string. 
+char_count=len(modified_story) #using the function len() will help determine the count of characters in a string. 
 print(char_count)
 5298
 words=modified_story.split() #I first changed the story into a list by using the function .split(), this will seperate the text in the already modified story into a list of words in which then I can use the function len() to count the individual words. In addition, I also made the string into a list because when it goes through the loop (below), if it was not in a list form, it will loop through each charcter. But because it is in a list, it will loop over each word. 
 word_count=len(words)
 print(word_count)
 1079
-word_frequency={} #first I generated an empty dictionary where my loop will store the store the individual words as the key and the frequency as its value. 
+word_frequency={} #first I generated an empty dictionary where my loop will store the individual words as the key and the frequency as its value. 
 for word in words: #I then generated a loop that will go over the list of words which is my modified story. 
     if word in word_frequency: #the if and else is to account if the word is already found in the dictionary. If the word is already in the dictionary, it will add +1 to the value. If not found, the else statement will add it to the dictionary with the value of 1. 
         word_frequency[word]+=1
@@ -19,13 +19,14 @@ for word in words: #I then generated a loop that will go over the list of words 
         word_frequency[word]=1
 print(word_frequency)
 {'Once': 1, 'on': 12, 'a': 19, 'time': 2, 'and': 65, 'twice': 1, 'all': 12, 'times': 1, 'together': 2, 'as': 4, 'ever': 1, 'I': 10, 'heard': 1, 'tell': 3, 'of': 15, 'there': 1, 'was': 8, 'tiny': 1, 'lassie': 8, 'who': 1, 'would': 4, 'weep': 1, 'day': 2, 'to': 40, 'have': 4, 'the': 83, 'stars': 10, 'in': 15, 'sky': 11, 'play': 6, 'with': 11, 'she': 51, 'wouldn’t': 2, 'this': 1, 'that': 4, 'but': 7, 'it': 6, 'always': 1, 'So': 11, 'one': 9, 'fine': 1, 'off': 4, 'went': 7, 'find': 7, 'them': 5, 'And': 7, 'walked': 3, 'till': 9, 'by': 7, 'came': 9, 'mill': 2, 'dam': 2, 'Goode’en': 5, 'ye': 9, 'says': 5, 'I’m': 6, 'seeking': 3, 'Have': 3, 'you': 13, 's': 1, 'een': 1, 'any': 2, 'Oh': 3, 'yes': 2, 'my': 12, 'bonnie': 1, 'said': 17, 'They': 4, 'shine': 2, 'own': 3, 'face': 1, 'o’': 2, 'nights': 1, 'can’t': 2, 'sleep': 1, 'for': 6, 'Jump': 1, 'perhaps': 1, 'you’ll': 5, 'jumped': 1, 'swam': 4, 'about': 5, 'ne’er': 5, 'could': 2, 'see': 3, 'brooklet': 1, 'Brooklet': 3, 'seen': 2, 'Yes': 2, 'indeed': 2, 'bonny': 3, 'glint': 1, 'banks': 1, 'at': 14, 'night': 2, 'Paddle': 1, 'maybe': 2, 'paddled': 4, 'did': 3, 'Good': 8, 'Folk': 8, 'looking': 2, 'e’er': 1, 'Why': 1, 'grass': 1, 'here': 3, 'Dance': 1, 'us': 1, 'danced': 4, 'down': 6, 'sate': 1, 'suppose': 1, 'wept': 1, 'dearie': 2, 'me': 11, 'oh': 1, 'I’ve': 4, 'if': 3, 'ye’ll': 1, 'not': 4, 'help': 1, 'shall': 2, 'never': 1, 'But': 3, 'whispered': 1, 'up': 7, 'her': 7, 'took': 1, 'hand': 1, 'If': 2, 'won’t': 1, 'go': 4, 'home': 4, 'your': 1, 'mother': 1, 'forward': 2, 'mind': 1, 'take': 1, 'right': 2, 'road': 2, 'Ask': 1, 'Four': 4, 'Feet': 10, 'carry': 4, 'No': 6, 'stairs': 3, 'without': 3, 'steps': 3, 'can': 3, 'climb': 3, 'be': 3, 'among': 1, 'then': 3, 'cried': 1, 'elsewhere': 1, 'set': 1, 'dancing': 2, 'again': 2, 'light': 4, 'heart': 1, 'saddled': 1, 'horse': 4, 'tied': 1, 'tree': 1, 'Beast': 1, 'Will': 2, 'give': 1, 'lift': 1, 'bones': 1, 'are': 2, 'an': 1, 'aching': 1, 'Nay': 2, 'know': 2, 'nought': 1, 'do': 2, 'bidding': 1, 'will': 1, 'Well': 1, 'it’s': 2, 'from': 3, 'come': 1, 'they': 7, 'bade': 1, 'That’s': 1, 'another': 1, 'story': 1, 'he': 4, 'jump': 1, 'ride': 1, 'rode': 3, 'got': 2, 'out': 3, 'forest': 1, 'found': 2, 'themselves': 1, 'edge': 1, 'sea': 1, 'water': 6, 'front': 1, 'wide': 1, 'glistening': 1, 'path': 2, 'running': 1, 'straight': 1, 'towards': 2, 'beautiful': 1, 'thing': 1, 'rose': 1, 'into': 4, 'colours': 1, 'world': 1, 'blue': 1, 'red': 1, 'green': 1, 'wonderful': 1, 'look': 1, 'Now': 2, 'get': 1, 'brought': 1, 'end': 2, 'land': 1, 'that’s': 2, 'much': 1, 'must': 1, 'away': 2, 'folk': 1, 'where’s': 2, 'stair': 3, 'none': 1, 'business': 1, 'neither': 1, 'goode’en': 1, 'stood': 1, 'still': 2, 'looked': 1, 'strange': 1, 'kind': 1, 'fish': 1, 'swimming': 1, 'feet': 2, 'big': 1, 'Fish': 4, 'show': 1, 'way': 2, 'unless': 1, 'bring': 2, 'word': 1, 'Get': 2, 'back': 2, 'hold': 3, 'fast': 3, 'Ah': 1, 'well': 1, 'Kerplash': 1, 'along': 1, 'silver': 1, 'bright': 2, 'arch': 1, 'nearer': 1, 'brighter': 1, 'sheen': 1, 'had': 1, 'shade': 1, 'eyes': 1, 'foot': 1, 'saw': 1, 'broad': 1, 'sloping': 1, 'far': 2, 'wee': 1, 'shining': 1, 'things': 1, 'yon’s': 1, 'I’ll': 1, 'warrant': 1, 'easier': 1, 'than': 1, 'such': 1, '‘t': 1, 'meant': 1, 'lassies’': 1, 'travel': 1, 'splashed': 1, 'through': 1, 'clomb': 7, 'step': 1, 'higher': 1, 'get:': 1, 'before': 1, 'around': 1, 'behind': 1, 'more': 3, 'struggled': 1, 'forced': 1, 'dark': 1, 'cold': 2, 'deeper': 1, 'fell': 1, 'dizzy': 1, 'shivered': 1, 'dazed': 2, 'fear': 1, 'last': 1, 'quite': 1, 'silly': 1, 'like': 1, 'let': 1, 'clean': 1, 'sank': 1, 'bang': 1, 'hard': 1, 'boards': 1, 'herself': 1, 'sitting': 1, 'weeping': 1, 'wailing': 1, 'bedside': 1, 'alone': 1}
+
 ```
  ## Regular Expression
  ```python
 import re #in order to use regular expression, you must import the build in re module function. 
 info='The story is written by Roger Federer & Serina Williams You can connect with the author at [rfederer@tennis.com] and [swilliams@tennis.com]Admin contact number: 1-888-111-2222' #I inserted the contact information into a string, so then I can use regular expression to find the emails from the string. 
 emails=re.findall(r'\w+@\w+\.\w+', info) #here, I use findall() because it will extract all the text in the string the matches the pattern it is looking for, and it returns it as a list of string as shown in the print result.
-#the pattern within the findall() is r'\w+@\w+' which means: r is suggested to use at the begging of pattern which refers to raw string. Then we have /w, which will 'match a letter or digit or underbar a-zA-Z0-9'. The + sign is just used for one or more occurences in the email, and the @ is to find the symbol of @ . To include the .com of each email, then I added .\w+' which will include the literal '.' plus information past the '.', a letter or digit or underbar a-zA-Z0-9' for one or more occurences
+#the pattern within the findall() is r'\w+@\w+' which means: r is suggested to use at the begging of pattern which refers to raw string. Then we have \w, which will 'match a letter or digit or underbar a-zA-Z0-9'. The + sign is just used for one or more occurences in the email, and the @ is to find the symbol itself. To include the .com of each email, then I added .\w+' which will include the literal '.' plus information past the '.', a letter or digit or underbar a-zA-Z0-9' for one or more occurences
 print(emails)
 ['rfederer@tennis.com', 'swilliams@tennis.com']
 phones=re.findall(r'\d[\d\-]+\d',info)
@@ -36,4 +37,11 @@ print(phones)
 ## Email Username Processing
 ```python
 info='The story is written by Roger Federer & Serina Williams You can connect with the author at [rfederer@tennis.com] and [swilliams@tennis.com]Admin contact number: 1-888-111-2222'
-
+username=re.findall(r'([\w.-]+)@', info) #here, I am using the parenthesis as capturing group so I am only searching for letters, numbers and - that are right before the @. 
+print(username)
+['rfederer', 'swilliams']
+new_emails=[ ] #I generated an empty list in which each time my loop goes through the usernames, it will store the values which will be the emails with the @hotmail.com.  
+for new in username: #here I am generating a loop that will go through each username and use the method string concatenation to add the @hotmail.com, and store it into the list. 
+    new_emails.append(new+"@hotmail.com")
+print(new_emails)
+['rfederer@hotmail.com', 'swilliams@hotmail.com']
