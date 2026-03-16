@@ -46,3 +46,4 @@ for new in username: #here I am generating a loop that will go through each user
 print(new_emails)
 ['rfederer@hotmail.com', 'swilliams@hotmail.com']
 ```
+## I couldn't figure out where to generate a histogram with a large data set so I took the top 40 most frequent words. 
