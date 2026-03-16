@@ -45,3 +45,4 @@ for new in username: #here I am generating a loop that will go through each user
     new_emails.append(new+"@hotmail.com")
 print(new_emails)
 ['rfederer@hotmail.com', 'swilliams@hotmail.com']
+```
